@@ -1,0 +1,13 @@
+Want to create a message bus with messaging threads
+
+MessageBus
+    Singleton message bus? Holds and manages messaging threads?
+    Single event queue used to broadcast across threads
+    Message thread broadcasts a message on the bus
+        push message to queue, broadcast
+
+MessageThread
+    Registers callback functions for certain events
+        add to map of events->callbacks?
+    contains an event queue
+    
